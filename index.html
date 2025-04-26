@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- IMPORT GOOGLE ICONS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <script src="script.js" defer></script>
 </head>
 <body>
    <main class="main-container">
@@ -20,7 +21,7 @@
             </button>
         </header>
 
-        <section class="weather-info">
+        <section class="weather-info" style="display: none;">
             <div class="location-date-container">
                 <div class="location">
                     <span class="material-symbols-outlined">
@@ -97,10 +98,30 @@
                 </div>
             </div>
         </section>
+
+        <section class="search-city section-message">
+            <img src="assets/message/search-city.png">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find the weather of your city by searching it in the search bar above.
+                </h4>
+            </div>
+        </section>
+
+        <section class="not-found section-message" style="display: none;">
+            <img src="assets/message/not-found.png">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find the weather of your city by searching it in the search bar above.
+                </h4>
+            </div>
+        </section>
    </main>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
 </body>
-</html>
+</html>`
