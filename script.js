@@ -28,9 +28,10 @@ async function getFetchData(endPoint, city) {
 async function updateWeatherInfo(city) {
     const weatherData = await getFetchData('weather',)
     if(weatherData.cod !== 200) {
-        showDissplaySection();
+        showDissplaySection(notFoundSection);
         alert('City not found!');
         return;
     }
-    console.log(weatherData);
 }
+
+function showDissplaySection(section) {
